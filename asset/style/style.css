@@ -52,6 +52,7 @@ li {
 
 .tab {
   display: flex;
+  margin-bottom: 3.5rem;
 }
 .tab li {
   width: 24%;
@@ -71,6 +72,25 @@ li {
 .menu__detail {
   border-left: 4px solid #ed1c24;
   padding-left: 15px;
+  margin-bottom: 1rem;
+}
+.menu__img {
+  margin-bottom: 1rem;
+}
+.menu__name {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.menu__price {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.menu__select {
+  border: 2px solid #ccc;
+  padding: 6px 35px 5px 12px;
+  font-size: 1.4rem;
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

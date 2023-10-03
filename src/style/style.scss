@@ -53,6 +53,7 @@ li {
 
 .tab {
   display: flex;
+  margin-bottom: 3.5rem;
   li {
     width: 24%;
     text-align: center;
@@ -72,5 +73,25 @@ li {
   &__detail {
     border-left: 4px solid #ed1c24;
     padding-left: 15px;
+    margin-bottom: 1rem;
   }
+  &__img {
+    margin-bottom: 1rem;
+  }
+  &__name {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  &__price {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  &__select {
+    border: 2px solid #ccc;
+    padding: 6px 35px 5px 12px;
+    font-size: 1.4rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
 }

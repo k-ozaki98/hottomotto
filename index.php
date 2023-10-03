@@ -1,5 +1,16 @@
 <?php
 
+  $url = "data.json";
+  $json = file_get_contents($url);
+  $json = mb_convert_encoding($json, 'UTF8', 'ASCII,JIS,UTF-8,EUC-JP,SJIS-WIN');
+  $arry = json_decode($json, true);
+
+  if($arr === null) {
+    var_dump("jsonの読み込みに失敗しました")
+  } else {
+    var_dump("jsonの読み込みに成功しました")
+  }
+
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +22,7 @@
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="asset/style/style.css">
 </head>
 <body>
   <header class="header">
@@ -43,7 +54,15 @@
             <div class="menu__detail">
               <p class="menu__name">プラスサラダ 100円サラダ【ドレッシング付き】</p>
               <p class="menu__price">100円</p>
-
+              <select name="" id="" class="menu__select">
+                <option value="">ライス普通</option>
+                <option value="">ライス大盛（＋５０）</option>
+              </select>
+              <div class="menu__count">
+                <span>-</span>
+                <input type="text" name="name" class="menu__input" min="0" max ="100">
+                <span>+</span>
+              </div>
             </div>
           </li>
           <li class="menu__item">
