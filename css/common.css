@@ -1,0 +1,14 @@
+html {
+  font-size: 0.52083333vw;
+}
+
+.l-inner {
+  width: 112rem;
+}
+
+.sec-ttl {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-bottom: 0.3em;
+  border-bottom: 2px solid #ccc;
+}
