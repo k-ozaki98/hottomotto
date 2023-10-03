@@ -6,9 +6,9 @@
   $arry = json_decode($json, true);
 
   if($arr === null) {
-    var_dump("jsonの読み込みに失敗しました")
+    var_dump("jsonの読み込みに失敗しました");
   } else {
-    var_dump("jsonの読み込みに成功しました")
+    var_dump("jsonの読み込みに成功しました");
   }
 
 ?>
